@@ -67,8 +67,8 @@ class WeatherService {
       } else {
         throw Exception("Failed to load weather data: ${response.statusCode}");
       }
-    } catch (e) {
-      print('Error: $e');
+    } catch (error) {
+      print('Error: $error');
       rethrow;
     }
   }
